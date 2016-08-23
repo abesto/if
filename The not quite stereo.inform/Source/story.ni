@@ -1,11 +1,5 @@
 "The not quite stereo" by Zoltan Nagy
 
-[
-Wants to test:
-	- Zsol
-	- Dani?
-]
-
 Include Plugs and Sockets by Sean Turner.
 
 Chapter 1 - Prodecure
