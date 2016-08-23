@@ -1,0 +1,236 @@
+<?xml version="1.0"?>
+
+<Skein rootNode="node-1002">
+    <generator>Inform Mac Client (Inform version 1.64/6.33/6M62)</generator>
+    <item nodeId="node-1002">
+        <command xml:space="preserve">Test</command>
+        <result xml:space="preserve">
+
+
+
+This is a not-even-alpha version of a game about cables and music. If you encounter frustration or confusion, this is not (yet) intended; please let me know (abesto0@gmail.com).
+Please type "transcript on" to create a recording of your session to be used for debugging any problems.
+If you get stuck, you can type "hint" to get a hint. The first one is free: you can type "hint" multiple times for increasingly spoilery hints.
+
+The not quite stereo
+An Interactive Fiction by Zoltan Nagy
+Release 1 / Serial number 160823 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+
+Your Room
+Getting a proper speaker setup has been on your bucket list for a while now. This is not a purchase one makes lightly - it should provide you with quality entertainment for years to come. After researching your options and getting opinions from co-workers, you've now finally hauled the big box of sound home. You've just finished unpacking the speakers: the left and right satellite speakers are looking at you anxiously from the corners of the desk, and the subwoofer is firmly on the ground, already plugged into the power strip. You have the manual. You have the cables. It's time to get wiring.
+
+Your trusty MacBook sits patiently on the desk, with Spotify open, playing your weekly Discover playlist.
+
+Next to it is a relatively small Dell monitor.
+
+On the floor are a box of cables (in which are a gray HDMI cable and a jack cable) and a subwoofer.
+
+&gt;</result>
+        <commentary xml:space="preserve">
+
+
+
+This is a not-even-alpha version of a game about cables and music. If you encounter frustration or confusion, this is not (yet) intended; please let me know (abesto0@gmail.com).
+Please type "transcript on" to create a recording of your session to be used for debugging any problems.
+If you get stuck, you can type "hint" to get a hint. The first one is free: you can type "hint" multiple times for increasingly spoilery hints.
+
+The not quite stereo
+An Interactive Fiction by Zoltan Nagy
+Release 1 / Serial number 160823 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+
+Your Room
+Getting a proper speaker setup has been on your bucket list for a while now. This is not a purchase one makes lightly - it should provide you with quality entertainment for years to come. After researching your options and getting opinions from co-workers, you've now finally hauled the big box of sound home. You've just finished unpacking the speakers: the left and right satellite speakers are looking at you anxiously from the corners of the desk, and the subwoofer is firmly on the ground, already plugged into the power strip. You have the manual. You have the cables. It's time to get wiring.
+
+Your trusty MacBook sits patiently on the desk, with Spotify open, playing your weekly Discover playlist.
+
+Next to it is a relatively small Dell monitor.
+
+On the floor are a box of cables (in which are a gray HDMI cable and a jack cable) and a subwoofer.
+
+&gt;</commentary>
+        <children><child nodeId="node-1724"></child>
+            <child nodeId="node-1728"></child>
+        </children>
+    </item>
+    <item nodeId="node-1728">
+        <command xml:space="preserve">plug left speaker into bottom RCA socket</command>
+        <result xml:space="preserve">You plug the left speaker into bottom RCA socket.
+
+Music is playing from the built-in speakers of your MacBook. You can't hear most of the bass line.
+
+&gt;</result>
+        <commentary xml:space="preserve">You plug the left speaker into bottom RCA socket.
+
+Music is playing from the built-in speakers of your MacBook. You can't hear most of the bass line.
+
+&gt;</commentary>
+        <children><child nodeId="node-1729"></child>
+        </children>
+    </item>
+    <item nodeId="node-1729">
+        <command xml:space="preserve">plug right speaker into subwoofer</command>
+        <result xml:space="preserve">You plug the right speaker into the subwoofer.
+
+Music is playing from the built-in speakers of your MacBook. You can't hear most of the bass line.
+
+&gt;</result>
+        <commentary xml:space="preserve">You plug the right speaker into the subwoofer.
+
+Music is playing from the built-in speakers of your MacBook. You can't hear most of the bass line.
+
+&gt;</commentary>
+        <children><child nodeId="node-1730"></child>
+        </children>
+    </item>
+    <item nodeId="node-1730">
+        <command xml:space="preserve">plug HDMI cable into laptop</command>
+        <result xml:space="preserve">You don't hear any music at all.
+
+&gt;</result>
+        <commentary xml:space="preserve">You don't hear any music at all.
+
+&gt;</commentary>
+        <children><child nodeId="node-1731"></child>
+        </children>
+    </item>
+    <item nodeId="node-1731">
+        <command xml:space="preserve">plug HDMI cable into monitor</command>
+        <result xml:space="preserve">The screen of your laptop goes black. After a few seconds the display comes back to life, along with the external Dell monitor, which is now mirroring the display of the MacBook.
+
+You don't hear any music at all.
+
+&gt;</result>
+        <commentary xml:space="preserve">The screen of your laptop goes black. After a few seconds the display comes back to life, along with the external Dell monitor, which is now mirroring the display of the MacBook.
+
+You don't hear any music at all.
+
+&gt;</commentary>
+        <children><child nodeId="node-1732"></child>
+        </children>
+    </item>
+    <item nodeId="node-1732">
+        <command xml:space="preserve">plug jack cable into monitor</command>
+        <result xml:space="preserve">You plug the jack cable into the Dell monitor.
+
+You don't hear any music at all.
+
+&gt;</result>
+        <commentary xml:space="preserve">You plug the jack cable into the Dell monitor.
+
+You don't hear any music at all.
+
+&gt;</commentary>
+        <children><child nodeId="node-1735"></child>
+            <child nodeId="node-1733"></child>
+            <child nodeId="node-1747"></child>
+        </children>
+    </item>
+    <item nodeId="node-1747">
+        <command xml:space="preserve">plug jack cable into subwoofer</command>
+        <result xml:space="preserve">You plug the jack cable into the subwoofer.
+
+It's done.
+You've connected all the wires, the system is alive. Clean, strong bass is pumping out the subwoofer, and the speakers on the desk give you the best listening of Korn you've had in a while. You sit back, close your eyes...
+
+Then you turn your head to the left a bit, then to the right... Something's not right. It's like the stereo is not stereo after all. Only one speaker is blasting Korn, the other is just sitting there quietly. How can this be? It's a brand new system! It's time to do some debugging.
+
+
+
+    *** This concludes the tutorial. The rest of the game, to be implemented, will center on you trying to get the right speaker to work. Please don't forget to send send the transcript of your game, along with any feedback, to abesto0@gmail.com. Thanks for testing! ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve">You plug the jack cable into the subwoofer.
+
+It's done.
+You've connected all the wires, the system is alive. Clean, strong bass is pumping out the subwoofer, and the speakers on the desk give you the best listening of Korn you've had in a while. You sit back, close your eyes...
+
+Then you turn your head to the left a bit, then to the right... Something's not right. It's like the stereo is not stereo after all. Only one speaker is blasting Korn, the other is just sitting there quietly. How can this be? It's a brand new system! It's time to do some debugging.
+
+
+
+    *** This concludes the tutorial. The rest of the game, to be implemented, will center on you trying to get the right speaker to work. Please don't forget to send send the transcript of your game, along with any feedback, to abesto0@gmail.com. Thanks for testing! ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </commentary>
+    </item>
+    <item nodeId="node-1733">
+        <command xml:space="preserve">plug jack cable into subwoofe</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1734"></child>
+        </children>
+    </item>
+    <item nodeId="node-1734">
+        <command xml:space="preserve">plug jack cable into subwoofer</command>
+        <result xml:space="preserve">You plug the jack cable into the subwoofer.
+
+
+
+    *** It's done.
+You've connected all the wires, the system is alive. Clean, strong bass is pumping out the subwoofer, and the speakers on the desk give you the best listening of Korn you've had in a while. You sit back, close your eyes...
+
+Then you turn your head to the left a bit, then to the right... Something's not right. It's like the stereo is not stereo after all. Only one speaker is blasting Korn, the other is just sitting there quietly. How can this be? It's a brand new system! It's time to do some debugging.
+
+This concludes the tutorial. The rest of the game, to be implemented, will center on you trying to get the right speaker to work. Please don't forget to send send the transcript of your game, along with any feedback, to abesto0@gmail.com. Thanks for testing! ***
+
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1735">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1724">
+        <command xml:space="preserve">hint</command>
+        <result xml:space="preserve">This is an interactive fiction game. You control your avatar by typing commands like "look", "look at laptop", "examine hdmi cable", and "plug hdmi cable into subwoofer" (not something that will work, this last one). Your goal is wire up all the equipment in the room to get a working sound system.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1725"></child>
+        </children>
+    </item>
+    <item nodeId="node-1725">
+        <command xml:space="preserve">hint</command>
+        <result xml:space="preserve">Remember how you have a manual? How about reading it? Maybe it'll give you some hints.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1726"></child>
+        </children>
+    </item>
+    <item nodeId="node-1726">
+        <command xml:space="preserve">hint</command>
+        <result xml:space="preserve">I'm out of hints; the next time you ask for help, I'll just give you the solution. Seriously. So be careful what you ask for!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1727"></child>
+        </children>
+    </item>
+    <item nodeId="node-1727">
+        <command xml:space="preserve">hint</command>
+        <result xml:space="preserve">Alright, here goes.
+plug left speaker into bottom RCA socket
+plug right speaker into subwoofer
+plug HDMI cable into laptop
+plug HDMI cable into monitor
+plug jack cable into monitor
+plug jack cable into subwoofer
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+</Skein>
