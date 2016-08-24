@@ -7,7 +7,6 @@
         <result xml:space="preserve">
 
 
-
 This is a not-even-alpha version of a game about cables and music. If you encounter frustration or confusion, this is not (yet) intended; please let me know.
 If you're playing this in an interpreter (not in-browser), please type "transcript on" to create a recording of your session to be used for debugging any problems. Otherwise, please copy-paste the session into an e-mail. In either case, please send to abesto0@gmail.com, along with any feedback.
 If you get stuck, you can type "hint" to get a hint. The first one is free: you can type "hint" multiple times for increasingly spoilery hints.
@@ -16,7 +15,7 @@ A note on talking to the game: due to limitations of the engine, some phrasings 
 
 The not quite stereo
 A story of the Chaos of Cables by Zoltan Nagy
-Release 2 / Serial number 160824 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Release 2 / Serial number 160824 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) 
 
 Your Room
 Getting a proper speaker setup has been on your bucket list for a while now. This is not a purchase one makes lightly - it should provide you with quality entertainment for years to come. After researching your options and getting opinions from co-workers, you've now finally hauled the big box of sound home. You've just finished unpacking the speakers: the left and right satellite speakers are looking at you anxiously from the corners of the desk, and the subwoofer is firmly on the ground, already plugged into the power strip. You have the manual. You have the cables. It's time to get wiring.
@@ -58,6 +57,7 @@ On the floor are a box of cables (in which are a gray HDMI cable and a jack cabl
             <child nodeId="node-1415"></child>
             <child nodeId="node-1418"></child>
             <child nodeId="node-1431"></child>
+            <child nodeId="node-1445"></child>
             <child nodeId="node-1269"></child>
             <child nodeId="node-1260"></child>
             <child nodeId="node-1251"></child>
@@ -737,6 +737,26 @@ gender: PS-male
     <item nodeId="node-1276">
         <command xml:space="preserve">plug the jack cable into the socket</command>
         <result xml:space="preserve">Which do you mean, the HDMI socket, white RCA socket, red RCA socket, green jack socket, the HD15 socket, or bottom RCA socket?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1445">
+        <command xml:space="preserve">plug jack cable into subwoofer</command>
+        <result xml:space="preserve">You plug the jack cable into the subwoofer.
+
+Music is playing from the built-in speakers of your MacBook. You can't hear most of the bass line.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1446"></child>
+        </children>
+    </item>
+    <item nodeId="node-1446">
+        <command xml:space="preserve">l green jack socket</command>
+        <result xml:space="preserve">A femal jack connector on the subwoofer. The rim of the socket is green. The pictogram of a musical note is next to it on the plastic cover.
+
+Music is playing from the built-in speakers of your MacBook. You can't hear most of the bass line.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
