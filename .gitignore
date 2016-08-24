@@ -1,2 +1,10 @@
-.env
-Release
+/*.Materials/.env
+/*.Materials/Release
+/*.inform/Build
+/*.inform/Index
+/*.inform/Metadata.iFiction
+/*.inform/Release.blurb
+/*.inform/manifest.plist
+/*.inform/notes.rtf
+/*.inform/Skein.skein
+/*.inform/Settings.plist
