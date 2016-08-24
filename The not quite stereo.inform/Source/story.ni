@@ -15,6 +15,10 @@ TODO:
 	time-based song switching. skip song?
 ]
 
+The release number is 2.
+The story headline is "A story of the Chaos of Cables".
+The story creation year is 2016.
+
 Include Plugs and Sockets by Sean Turner.
 Include Smarter Parser by Aaron Reed.
 Include Commonly Unimplemented by Aaron Reed.
@@ -41,7 +45,7 @@ An HD15 plug is a kind of PS-plug. The PS-type of an HD15 plug is "HD15".
 Section 2 - Pre-release notes
 
 When play begins:
-	say "[line break]This is a not-even-alpha version of a game about cables and music. If you encounter frustration or confusion, this is not (yet) intended; please let me know.[line break]If you're playing this in an interpreter (not in-browser), please type 'transcript on' to create a recording of your session to be used for debugging any problems. Otherwise, please copy-paste the session into an e-mail. In either case, please send to abesto0@gmail.com, along with any feedback.[line break]If you get stuck, you can type 'hint' to get a hint. The first one is free: you can type 'hint' multiple times for increasingly spoilery hints.[paragraph break]";
+	say "This is a not-even-alpha version of a game about cables and music. If you encounter frustration or confusion, this is not (yet) intended; please let me know.[line break]If you're playing this in an interpreter (not in-browser), please type 'transcript on' to create a recording of your session to be used for debugging any problems. Otherwise, please copy-paste the session into an e-mail. In either case, please send to abesto0@gmail.com, along with any feedback.[line break]If you get stuck, you can type 'hint' to get a hint. The first one is free: you can type 'hint' multiple times for increasingly spoilery hints.[paragraph break]";
 	say "A note on talking to the game: due to limitations of the engine, some phrasings will work better for plugging things in than others. For best results, plug cables into objects (like 'plug HDMI cable into monitor'), or into specific sockets (like 'plug jack cable into headphone out'). For objects with hard-wired cables, try plugging in the object itself (like 'plug right speaker into left speaker')."
 
 

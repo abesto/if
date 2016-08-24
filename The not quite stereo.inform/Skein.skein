@@ -15,8 +15,8 @@ If you get stuck, you can type "hint" to get a hint. The first one is free: you 
 A note on talking to the game: due to limitations of the engine, some phrasings will work better for plugging things in than others. For best results, plug cables into objects (like "plug HDMI cable into monitor"), or into specific sockets (like "plug jack cable into headphone out"). For objects with hard-wired cables, try plugging in the object itself (like "plug right speaker into left speaker").
 
 The not quite stereo
-An Interactive Fiction by Zoltan Nagy
-Release 1 / Serial number 160824 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+A story of the Chaos of Cables by Zoltan Nagy
+Release 2 / Serial number 160824 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 Your Room
 Getting a proper speaker setup has been on your bucket list for a while now. This is not a purchase one makes lightly - it should provide you with quality entertainment for years to come. After researching your options and getting opinions from co-workers, you've now finally hauled the big box of sound home. You've just finished unpacking the speakers: the left and right satellite speakers are looking at you anxiously from the corners of the desk, and the subwoofer is firmly on the ground, already plugged into the power strip. You have the manual. You have the cables. It's time to get wiring.
@@ -50,7 +50,8 @@ Next to it is a relatively small Dell monitor.
 On the floor are a box of cables (in which are a gray HDMI cable and a jack cable) and a subwoofer.
 
 &gt;</commentary>
-        <children><child nodeId="node-1277"></child>
+        <children><child nodeId="node-1444"></child>
+            <child nodeId="node-1277"></child>
             <child nodeId="node-1416"></child>
             <child nodeId="node-1419"></child>
             <child nodeId="node-1439"></child>
@@ -1196,6 +1197,13 @@ plug HDMI cable into laptop
 plug HDMI cable into monitor
 plug jack cable into monitor
 plug jack cable into subwoofer
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1444">
+        <command xml:space="preserve">examine story</command>
+        <result xml:space="preserve">You can't see any such thing.
+
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>

@@ -11,70 +11,70 @@
     </dict>
     <key>1</key><dict>
         <key>Filename</key><string>/Users/abesto/playground/if/The not quite stereo.inform/Source/story.ni</string>
-        <key>Line</key><integer>23</integer>
+        <key>Line</key><integer>27</integer>
         <key>Title</key><string>Chapter 1 - Prodecure</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>2</key><dict>
         <key>Filename</key><string>/Users/abesto/playground/if/The not quite stereo.inform/Source/story.ni</string>
-        <key>Line</key><integer>27</integer>
+        <key>Line</key><integer>31</integer>
         <key>Title</key><string>Section 1 - Jacks and sockets</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>3</key><dict>
         <key>Filename</key><string>/Users/abesto/playground/if/The not quite stereo.inform/Source/story.ni</string>
-        <key>Line</key><integer>41</integer>
+        <key>Line</key><integer>45</integer>
         <key>Title</key><string>Section 2 - Pre-release notes</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>4</key><dict>
         <key>Filename</key><string>/Users/abesto/playground/if/The not quite stereo.inform/Source/story.ni</string>
-        <key>Line</key><integer>48</integer>
+        <key>Line</key><integer>52</integer>
         <key>Title</key><string>Chapter 2 - The Game</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>5</key><dict>
         <key>Filename</key><string>/Users/abesto/playground/if/The not quite stereo.inform/Source/story.ni</string>
-        <key>Line</key><integer>50</integer>
+        <key>Line</key><integer>54</integer>
         <key>Title</key><string>Section 1 - A few decisions</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>6</key><dict>
         <key>Filename</key><string>/Users/abesto/playground/if/The not quite stereo.inform/Source/story.ni</string>
-        <key>Line</key><integer>76</integer>
+        <key>Line</key><integer>80</integer>
         <key>Title</key><string>Section 2 - Tutorial</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>7</key><dict>
         <key>Filename</key><string>/Users/abesto/playground/if/The not quite stereo.inform/Source/story.ni</string>
-        <key>Line</key><integer>133</integer>
+        <key>Line</key><integer>137</integer>
         <key>Title</key><string>Section 3 - Debugging - the actual puzzle</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>8</key><dict>
         <key>Filename</key><string>/Users/abesto/playground/if/The not quite stereo.inform/Source/story.ni</string>
-        <key>Line</key><integer>141</integer>
+        <key>Line</key><integer>145</integer>
         <key>Title</key><string>Section 4 - Ambience</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>9</key><dict>
         <key>Filename</key><string>/Users/abesto/playground/if/The not quite stereo.inform/Source/story.ni</string>
-        <key>Line</key><integer>145</integer>
+        <key>Line</key><integer>149</integer>
         <key>Title</key><string>Section 5 - Victory condition</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>10</key><dict>
         <key>Filename</key><string>/Users/abesto/playground/if/The not quite stereo.inform/Source/story.ni</string>
-        <key>Line</key><integer>157</integer>
+        <key>Line</key><integer>161</integer>
         <key>Title</key><string>Section 6 - Glossary</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
