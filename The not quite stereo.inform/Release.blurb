@@ -29,6 +29,7 @@ placeholder [BLURB] = "A work of interactive fiction."
 
 ! Other material to release
 
+auxiliary "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/IntroductionToIF.pdf" "Introduction to IF" "--"
 auxiliary "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/Postcard.pdf" "IF Postcard" "--"
 placeholder [OTHERCREDITS] = "The postcard was written by Andrew Plotkin and designed by Lea Albaugh."
 
@@ -55,4 +56,3 @@ status alternative ||Using 'Release along with a file of "Such-and-Such" called 
 status alternative ||Using 'Release along with the source text'&nbsp;<a href=inform:/doc412.html><img border=0 src=inform:/doc_images/help.png></a>||
 status alternative ||Using 'Release along with a solution'&nbsp;<a href=inform:/doc411.html><img border=0 src=inform:/doc_images/help.png></a>||
 status alternative ||Using 'Release along with the library card'&nbsp;<a href=inform:/doc412.html><img border=0 src=inform:/doc_images/help.png></a>||
-status alternative ||Using 'Release along with the introductory booklet'&nbsp;<a href=inform:/doc404.html><img border=0 src=inform:/doc_images/help.png></a>||

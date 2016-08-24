@@ -163,5 +163,4 @@ Understand "laptop" as MacBook.
 Understand "screen" or "display" as monitor.
 Understand "table" as desk.
 
-Release along with an introductory postcard and an interpreter.
-
+Release along with an introductory postcard, the introductory booklet, and an interpreter.
