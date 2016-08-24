@@ -1,27 +1,29 @@
 <?xml version="1.0"?>
 
-<Skein rootNode="node-1002">
+<Skein rootNode="node-1241">
     <generator>Inform Mac Client (Inform version 1.64/6.33/6M62)</generator>
-    <item nodeId="node-1002">
-        <command xml:space="preserve">Test</command>
+    <item nodeId="node-1241">
+        <command xml:space="preserve">The not quite stereo</command>
         <result xml:space="preserve">
 
 
 
-This is a not-even-alpha version of a game about cables and music. If you encounter frustration or confusion, this is not (yet) intended; please let me know (abesto0@gmail.com).
-Please type "transcript on" to create a recording of your session to be used for debugging any problems.
+This is a not-even-alpha version of a game about cables and music. If you encounter frustration or confusion, this is not (yet) intended; please let me know.
+If you're playing this in an interpreter (not in-browser), please type "transcript on" to create a recording of your session to be used for debugging any problems. Otherwise, please copy-paste the session into an e-mail. In either case, please send to abesto0@gmail.com, along with any feedback.
 If you get stuck, you can type "hint" to get a hint. The first one is free: you can type "hint" multiple times for increasingly spoilery hints.
+
+A note on talking to the game: due to limitations of the engine, some phrasings will work better for plugging things in than others. For best results, plug cables into objects (like "plug HDMI cable into monitor"), or into specific sockets (like "plug jack cable into headphone out"). For objects with hard-wired cables, try plugging in the object itself (like "plug right speaker into left speaker").
 
 The not quite stereo
 An Interactive Fiction by Zoltan Nagy
-Release 1 / Serial number 160823 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 160824 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 Your Room
 Getting a proper speaker setup has been on your bucket list for a while now. This is not a purchase one makes lightly - it should provide you with quality entertainment for years to come. After researching your options and getting opinions from co-workers, you've now finally hauled the big box of sound home. You've just finished unpacking the speakers: the left and right satellite speakers are looking at you anxiously from the corners of the desk, and the subwoofer is firmly on the ground, already plugged into the power strip. You have the manual. You have the cables. It's time to get wiring.
 
 Your trusty MacBook sits patiently on the desk, with Spotify open, playing your weekly Discover playlist.
 
-Next to it is a relatively small Dell monitor.
+On the white desk are the left speaker, the right speaker, a Dell monitor, and a manual.
 
 On the floor are a box of cables (in which are a gray HDMI cable and a jack cable) and a subwoofer.
 
@@ -30,8 +32,8 @@ On the floor are a box of cables (in which are a gray HDMI cable and a jack cabl
 
 
 
-This is a not-even-alpha version of a game about cables and music. If you encounter frustration or confusion, this is not (yet) intended; please let me know (abesto0@gmail.com).
-Please type "transcript on" to create a recording of your session to be used for debugging any problems.
+This is a not-even-alpha version of a game about cables and music. If you encounter frustration or confusion, this is not (yet) intended; please let me know.
+If you're playing this in an interpreter (not in-browser), please type "transcript on" to create a recording of your session to be used for debugging any problems. Otherwise, please copy-paste the session into an e-mail. In either case, please send to abesto0@gmail.com, along with any feedback.
 If you get stuck, you can type "hint" to get a hint. The first one is free: you can type "hint" multiple times for increasingly spoilery hints.
 
 The not quite stereo
@@ -48,11 +50,47 @@ Next to it is a relatively small Dell monitor.
 On the floor are a box of cables (in which are a gray HDMI cable and a jack cable) and a subwoofer.
 
 &gt;</commentary>
-        <children><child nodeId="node-1724"></child>
-            <child nodeId="node-1728"></child>
+        <children><child nodeId="node-1277"></child>
+            <child nodeId="node-1416"></child>
+            <child nodeId="node-1419"></child>
+            <child nodeId="node-1439"></child>
+            <child nodeId="node-1415"></child>
+            <child nodeId="node-1418"></child>
+            <child nodeId="node-1431"></child>
+            <child nodeId="node-1269"></child>
+            <child nodeId="node-1260"></child>
+            <child nodeId="node-1251"></child>
+            <child nodeId="node-1242"></child>
+            <child nodeId="node-1442"></child>
         </children>
     </item>
-    <item nodeId="node-1728">
+    <item nodeId="node-1442">
+        <command xml:space="preserve">read manual</command>
+        <result xml:space="preserve">A five-page pamphlet with lots of tiny letters. The only part that looks interesting is about how to wire up the stereo. There's a section detailing a desktop setup - surprisingly helpful.
+
+1. Plug the RCA cable coming out the back of the left satellite speaker into the bottom RCA socket on the subwoofer, labelled "left speaker".
+2. Connect the HD15 cable coming out the back of the right satellite speaker to the subwoofer.
+3. Connect your laptop or desktop computer to your display via HDMI.
+4. Plug one end the provided jack-jack audio cable into the stereo output of your display.
+5. Plug the other end of the jack-jack audio cable into the jack socket on the subwoofer.
+
+Music is playing from the built-in speakers of your MacBook. You can't hear most of the bass line.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1443"></child>
+        </children>
+    </item>
+    <item nodeId="node-1443">
+        <command xml:space="preserve">look at bottom rca socket</command>
+        <result xml:space="preserve">A female RCA connector on the subwoofer. The plastic rim of the socket is black. The words "Left speaker" are printed next to it.
+
+Music is playing from the built-in speakers of your MacBook. You can't hear most of the bass line.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1242">
         <command xml:space="preserve">plug left speaker into bottom RCA socket</command>
         <result xml:space="preserve">You plug the left speaker into bottom RCA socket.
 
@@ -64,10 +102,10 @@ Music is playing from the built-in speakers of your MacBook. You can't hear most
 Music is playing from the built-in speakers of your MacBook. You can't hear most of the bass line.
 
 &gt;</commentary>
-        <children><child nodeId="node-1729"></child>
+        <children><child nodeId="node-1243"></child>
         </children>
     </item>
-    <item nodeId="node-1729">
+    <item nodeId="node-1243">
         <command xml:space="preserve">plug right speaker into subwoofer</command>
         <result xml:space="preserve">You plug the right speaker into the subwoofer.
 
@@ -79,10 +117,10 @@ Music is playing from the built-in speakers of your MacBook. You can't hear most
 Music is playing from the built-in speakers of your MacBook. You can't hear most of the bass line.
 
 &gt;</commentary>
-        <children><child nodeId="node-1730"></child>
+        <children><child nodeId="node-1244"></child>
         </children>
     </item>
-    <item nodeId="node-1730">
+    <item nodeId="node-1244">
         <command xml:space="preserve">plug HDMI cable into laptop</command>
         <result xml:space="preserve">You don't hear any music at all.
 
@@ -90,10 +128,10 @@ Music is playing from the built-in speakers of your MacBook. You can't hear most
         <commentary xml:space="preserve">You don't hear any music at all.
 
 &gt;</commentary>
-        <children><child nodeId="node-1731"></child>
+        <children><child nodeId="node-1245"></child>
         </children>
     </item>
-    <item nodeId="node-1731">
+    <item nodeId="node-1245">
         <command xml:space="preserve">plug HDMI cable into monitor</command>
         <result xml:space="preserve">The screen of your laptop goes black. After a few seconds the display comes back to life, along with the external Dell monitor, which is now mirroring the display of the MacBook.
 
@@ -105,10 +143,10 @@ You don't hear any music at all.
 You don't hear any music at all.
 
 &gt;</commentary>
-        <children><child nodeId="node-1732"></child>
+        <children><child nodeId="node-1246"></child>
         </children>
     </item>
-    <item nodeId="node-1732">
+    <item nodeId="node-1246">
         <command xml:space="preserve">plug jack cable into monitor</command>
         <result xml:space="preserve">You plug the jack cable into the Dell monitor.
 
@@ -120,12 +158,12 @@ You don't hear any music at all.
 You don't hear any music at all.
 
 &gt;</commentary>
-        <children><child nodeId="node-1735"></child>
-            <child nodeId="node-1733"></child>
-            <child nodeId="node-1747"></child>
+        <children><child nodeId="node-1250"></child>
+            <child nodeId="node-1248"></child>
+            <child nodeId="node-1247"></child>
         </children>
     </item>
-    <item nodeId="node-1747">
+    <item nodeId="node-1247">
         <command xml:space="preserve">plug jack cable into subwoofer</command>
         <result xml:space="preserve">You plug the jack cable into the subwoofer.
 
@@ -158,16 +196,18 @@ Then you turn your head to the left a bit, then to the right... Something's not 
 Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
 &gt; </commentary>
     </item>
-    <item nodeId="node-1733">
+    <item nodeId="node-1248">
         <command xml:space="preserve">plug jack cable into subwoofe</command>
         <result xml:space="preserve">You can't see any such thing.
 
 &gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1734"></child>
+        <commentary xml:space="preserve">You can't see any such thing.
+
+&gt;</commentary>
+        <children><child nodeId="node-1249"></child>
         </children>
     </item>
-    <item nodeId="node-1734">
+    <item nodeId="node-1249">
         <command xml:space="preserve">plug jack cable into subwoofer</command>
         <result xml:space="preserve">You plug the jack cable into the subwoofer.
 
@@ -185,43 +225,969 @@ This concludes the tutorial. The rest of the game, to be implemented, will cente
 
 Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
 &gt; </result>
-        <commentary xml:space="preserve"></commentary>
+        <commentary xml:space="preserve">You plug the jack cable into the subwoofer.
+
+
+
+    *** It's done.
+You've connected all the wires, the system is alive. Clean, strong bass is pumping out the subwoofer, and the speakers on the desk give you the best listening of Korn you've had in a while. You sit back, close your eyes...
+
+Then you turn your head to the left a bit, then to the right... Something's not right. It's like the stereo is not stereo after all. Only one speaker is blasting Korn, the other is just sitting there quietly. How can this be? It's a brand new system! It's time to do some debugging.
+
+This concludes the tutorial. The rest of the game, to be implemented, will center on you trying to get the right speaker to work. Please don't forget to send send the transcript of your game, along with any feedback, to abesto0@gmail.com. Thanks for testing! ***
+
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </commentary>
     </item>
-    <item nodeId="node-1735">
+    <item nodeId="node-1250">
         <command xml:space="preserve"></command>
         <result xml:space="preserve">I beg your pardon?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1724">
-        <command xml:space="preserve">hint</command>
-        <result xml:space="preserve">This is an interactive fiction game. You control your avatar by typing commands like "look", "look at laptop", "examine hdmi cable", and "plug hdmi cable into subwoofer" (not something that will work, this last one). Your goal is wire up all the equipment in the room to get a working sound system.
+    <item nodeId="node-1251">
+        <command xml:space="preserve">plug jack plug into socket</command>
+        <result xml:space="preserve">You can't use multiple objects with that verb.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1725"></child>
+        <children><child nodeId="node-1252"></child>
         </children>
     </item>
-    <item nodeId="node-1725">
+    <item nodeId="node-1252">
+        <command xml:space="preserve">plug jack plug into jack socket</command>
+        <result xml:space="preserve">You can't use multiple objects with that verb.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1253"></child>
+        </children>
+    </item>
+    <item nodeId="node-1253">
+        <command xml:space="preserve">plug the jack cable into the socket</command>
+        <result xml:space="preserve">Which do you mean, the HDMI socket, white RCA socket, red RCA socket, green jack socket, the HD15 socket, or bottom RCA socket?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1254"></child>
+        </children>
+    </item>
+    <item nodeId="node-1254">
+        <command xml:space="preserve">jack socket</command>
+        <result xml:space="preserve">You plug the jack cable into green jack socket.
+
+Music is playing from the built-in speakers of your MacBook. You can't hear most of the bass line.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1255"></child>
+        </children>
+    </item>
+    <item nodeId="node-1255">
+        <command xml:space="preserve">look at display</command>
+        <result xml:space="preserve">You always mean to get a bigger one, but one step at a time - for now, let's set up the stereo. The display has a "No Input" message moving around on it. On the back of the screen there's an HDMI input, and a small jack (output) socket. They're kind of hard to reach, but by now you can plug cables into them by touch.
+
+The Dell monitor has nothing plugged into it.
+
+Music is playing from the built-in speakers of your MacBook. You can't hear most of the bass line.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1256"></child>
+        </children>
+    </item>
+    <item nodeId="node-1256">
+        <command xml:space="preserve">look at jack</command>
+        <result xml:space="preserve">You can't use multiple objects with that verb.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1257"></child>
+        </children>
+    </item>
+    <item nodeId="node-1257">
+        <command xml:space="preserve">look at jack plug</command>
+        <result xml:space="preserve">You can't use multiple objects with that verb.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1258"></child>
+        </children>
+    </item>
+    <item nodeId="node-1258">
+        <command xml:space="preserve">look at jack cable</command>
+        <result xml:space="preserve">You see nothing special about the jack cable.
+
+It is plugged into a subwoofer.
+
+Music is playing from the built-in speakers of your MacBook. You can't hear most of the bass line.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1259"></child>
+        </children>
+    </item>
+    <item nodeId="node-1259">
+        <command xml:space="preserve">plug right speaker into left speaker</command>
+        <result xml:space="preserve">The left speaker has no socket.
+
+Music is playing from the built-in speakers of your MacBook. You can't hear most of the bass line.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1260">
+        <command xml:space="preserve">plug jack plug into headphone out</command>
+        <result xml:space="preserve">You can't use multiple objects with that verb.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1261"></child>
+        </children>
+    </item>
+    <item nodeId="node-1261">
+        <command xml:space="preserve">rules</command>
+        <result xml:space="preserve">Rules tracing now switched on. Type "rules off" to switch it off again, or "rules all" to include even rules which do not apply.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1262"></child>
+        </children>
+    </item>
+    <item nodeId="node-1262">
+        <command xml:space="preserve">tracing 5</command>
+        <result xml:space="preserve">That's not a verb I recognize.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1263"></child>
+        </children>
+    </item>
+    <item nodeId="node-1263">
+        <command xml:space="preserve">trace 5</command>
+        <result xml:space="preserve">[Rule "declare everything initially unmentioned rule" applies.]
+[Parser tracing set to level 5.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1264"></child>
+        </children>
+    </item>
+    <item nodeId="node-1264">
+        <command xml:space="preserve">plug jack plug into headphone out</command>
+        <result xml:space="preserve">[ "plug" plug / "jack" jack / "plug" plug / "into" into / "headphone" headphone / "out" out ]
+[Parsing for the verb 'plug' (1 lines)]
+
+[line 0 * noun 'into' noun -&gt; A77_plugging_it_into]
+ [line 0 token 1 word 2 : noun]
+  [Object list from word 2]
+  [Calling NounDomain on location and actor]
+   [NounDomain called at word 2
+   seeking definite object
+    Trying the north (635495) at word 2
+Parse_name called
+Pass 1: 0 Pass 2: 0 Pass 3: 0
+    Trying the northeast (635527) at word 2
+Parse_name called
+Pass 1: 0 Pass 2: 0 Pass 3: 0
+    Trying the northwest (635559) at word 2
+Parse_name called
+Pass 1: 0 Pass 2: 0 Pass 3: 0
+    Trying the south (635591) at word 2
+Parse_name called
+Pass 1: 0 Pass 2: 0 Pass 3: 0
+    Trying the southeast (635623) at word 2
+Parse_name called
+Pass 1: 0 Pass 2: 0 Pass 3: 0
+    Trying the southwest (635655) at word 2
+Parse_name called
+Pass 1: 0 Pass 2: 0 Pass 3: 0
+    Trying the east (635687) at word 2
+Parse_name called
+Pass 1: 0 Pass 2: 0 Pass 3: 0
+    Trying the west (635719) at word 2
+Parse_name called
+Pass 1: 0 Pass 2: 0 Pass 3: 0
+    Trying the up (635751) at word 2
+Parse_name called
+Pass 1: 0 Pass 2: 0 Pass 3: 0
+    Trying the down (635783) at word 2
+Parse_name called
+Pass 1: 0 Pass 2: 0 Pass 3: 0
+    Trying the inside (635815) at word 2
+Parse_name called
+Pass 1: 0 Pass 2: 0 Pass 3: 0
+    Trying the outside (635847) at word 2
+Parse_name called
+Pass 1: 0 Pass 2: 0 Pass 3: 0
+    Trying yourself (635879) at word 2
+Parse_name called
+Pass 1: 0 Pass 2: 0 Pass 3: 0
+    Trying the MacBook (635975) at word 2
+Parse_name called
+Pass 1: 0 Pass 2: 0 Pass 3: 0
+    Trying HDMI out (636263) at word 2
+    Trying MacBook stereo out (636295) at word 2
+Parse_name called
+Pass 1: 1 Pass 2: 1 Pass 3: 1
+    Matched (1)
+    Trying the left speaker (636007) at word 2
+Parse_name called
+Pass 1: 0 Pass 2: 0 Pass 3: 0
+    Matched (0)
+    Trying the RCA plug (636327) at word 2
+    Matched (0)
+    Trying the right speaker (636039) at word 2
+    Matched (0)
+    Trying headphone out (636359) at word 2
+Parse_name called
+Pass 1: 1 Pass 2: 1 Pass 3: 1
+    Matched (1)
+    Trying media in (636391) at word 2
+    Matched (1)
+    Trying the HD15 plug (636423) at word 2
+    Matched (0)
+    Trying the Dell monitor (636071) at word 2
+Parse_name called
+Pass 1: 0 Pass 2: 0 Pass 3: 0
+    Matched (0)
+    Trying the HDMI socket (636455) at word 2
+    Matched (0)
+    Trying the jack socket (636487) at word 2
+    Matched (1)
+    Trying the floor (636103) at word 2
+    Matched (0)
+    Trying the box of cables (636135) at word 2
+    Matched (0)
+    Trying the gray HDMI cable (636167) at word 2
+    Matched (0)
+    Trying the HDMI plug (636519) at word 2
+    Matched (0)
+    Trying the HDMI plug (636551) at word 2
+    Matched (0)
+    Trying the jack cable (636199) at word 2
+    Matched (1)
+    Trying the jack plug (636583) at word 2
+    Matched (2)
+    Trying the jack plug (636615) at word 2
+    Matched (2)
+    Trying the subwoofer (636231) at word 2
+    Matched (0)
+    Trying white RCA socket (636647) at word 2
+    Matched (0)
+    Trying red RCA socket (636679) at word 2
+    Matched (0)
+    Trying green jack socket (636711) at word 2
+    Matched (1)
+    Trying the HD15 socket (636743) at word 2
+    Matched (0)
+    Trying bottom RCA socket (636775) at word 2
+    Matched (0)
+    Trying the manual (635911) at word 2
+    Matched (0)
+   [ND made 2 matches]
+   [Adjudicating match list of size 2 in context 0
+   indefinite type: plural 
+   number wanted: all
+   most likely GNAs of names: 4095
+   Scoring match list: indef mode 1 type 8, satisfying 0 requirements:
+    Trying the manual (635911) at word 5
+    Matched (0)
+    Trying yourself (635879) at word 5
+Parse_name called
+Pass 1: 0 Pass 2: 0 Pass 3: 0
+    Matched (0)
+    Trying the manual (635911) at word 5
+    Matched (0)
+    Trying the MacBook (635975) at word 5
+Parse_name called
+Pass 1: 0 Pass 2: 0 Pass 3: 0
+    Matched (0)
+    Trying HDMI out (636263) at word 5
+    Matched (0)
+    Trying MacBook stereo out (636295) at word 5
+Parse_name called
+Pass 1: 0 Pass 2: 0 Pass 3: 0
+    Matched (0)
+    Trying the left speaker (636007) at word 5
+Parse_name called
+Pass 1: 0 Pass 2: 0 Pass 3: 0
+    Matched (0)
+    Trying the RCA plug (636327) at word 5
+    Matched (0)
+    Trying the right speaker (636039) at word 5
+    Matched (0)
+    Trying headphone out (636359) at word 5
+Parse_name called
+Pass 1: 2 Pass 2: 2 Pass 3: 2
+    Matched (2)
+    Trying media in (636391) at word 5
+    Matched (0)
+    Trying the HD15 plug (636423) at word 5
+    Matched (0)
+    Trying the Dell monitor (636071) at word 5
+Parse_name called
+Pass 1: 0 Pass 2: 0 Pass 3: 0
+    Matched (0)
+    Trying the HDMI socket (636455) at word 5
+    Matched (0)
+    Trying the jack socket (636487) at word 5
+    Matched (0)
+    Trying the floor (636103) at word 5
+    Matched (0)
+    Trying the box of cables (636135) at word 5
+    Matched (0)
+    Trying the gray HDMI cable (636167) at word 5
+    Matched (0)
+    Trying the HDMI plug (636519) at word 5
+    Matched (0)
+    Trying the HDMI plug (636551) at word 5
+    Matched (0)
+    Trying the jack cable (636199) at word 5
+    Matched (0)
+    Trying the jack plug (636583) at word 5
+    Matched (0)
+    Trying the jack plug (636615) at word 5
+    Matched (0)
+    Trying the subwoofer (636231) at word 5
+    Matched (0)
+    Trying white RCA socket (636647) at word 5
+    Matched (0)
+    Trying red RCA socket (636679) at word 5
+    Matched (0)
+    Trying green jack socket (636711) at word 5
+    Matched (0)
+    Trying the HD15 socket (636743) at word 5
+    Matched (0)
+    Trying bottom RCA socket (636775) at word 5
+    Matched (0)
+
+     The jack plug (636583) in nothing : 2136 points
+
+     The jack plug (636615) in nothing : 2136 points
+  [token resulted in failure with error type 8]
+You can't use multiple objects with that verb.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1265"></child>
+        </children>
+    </item>
+    <item nodeId="node-1265">
+        <command xml:space="preserve">trace off</command>
+        <result xml:space="preserve">[ "trace" trace / "off" off ]
+[Parsing for the verb 'trace' (4 lines)]
+
+[line 0 * -&gt; TraceOn]
+ [line 0 token 1 word 2 : END]
+
+[line 1 * number -&gt; TraceLevel]
+ [line 1 token 1 word 2 : number]
+  [token resulted in failure with error type 3]
+
+[line 2 * 'on' -&gt; TraceOn]
+[line rejected for not ending with correct preposition]
+
+[line 3 * 'off' -&gt; TraceOff]
+ [line 3 token 1 word 2 : 'off']
+  [token resulted in success]
+ [line 3 token 2 word 3 : END]
+[Line successfully parsed]
+[Rule "declare everything initially unmentioned rule" applies.]
+Trace off.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1266"></child>
+        </children>
+    </item>
+    <item nodeId="node-1266">
+        <command xml:space="preserve">actions off</command>
+        <result xml:space="preserve">[Rule "declare everything initially unmentioned rule" applies.]
+Actions listing off.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1267"></child>
+        </children>
+    </item>
+    <item nodeId="node-1267">
+        <command xml:space="preserve">plug the jack cable into the jack socket</command>
+        <result xml:space="preserve">You can't use multiple objects with that verb.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1268"></child>
+        </children>
+    </item>
+    <item nodeId="node-1268">
+        <command xml:space="preserve">plug the jack cable into the macbook</command>
+        <result xml:space="preserve">(the MacBook)
+[Rule "declare everything initially unmentioned rule" applies.]
+[Rule "announce items from multiple object lists rule" applies.]
+[Rule "set pronouns from items from multiple object lists rule" applies.]
+[Rule "before stage rule" applies.]
+[Rule "instead stage rule" applies.]
+[Rule "investigate player's awareness before action rule" applies.]
+[Rule "player aware of his own actions rule" applies.]
+[Rule "check stage rule" applies.]
+[Rule "don't-plug-jack-into-laptop rule" applies.]
+That doesn't sound right. Maybe you should read the manual.
+
+[Rule "A first turn sequence rule" applies.]
+[Rule "every turn stage rule" applies.]
+[Rule "Every turn" applies.]
+[Rule "Every turn" applies.]
+Music is playing from the built-in speakers of your MacBook. You can't hear most of the bass line.
+
+[Rule "A last turn sequence rule" applies.]
+[Rule "notify score changes rule" applies.]
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1269">
+        <command xml:space="preserve">plug jack plug</command>
+        <result xml:space="preserve">You can't use multiple objects with that verb.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1270"></child>
+        </children>
+    </item>
+    <item nodeId="node-1270">
+        <command xml:space="preserve">looka t jack plug</command>
+        <result xml:space="preserve">That's not a verb I recognize.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1271"></child>
+        </children>
+    </item>
+    <item nodeId="node-1271">
+        <command xml:space="preserve">look at jack plug</command>
+        <result xml:space="preserve">You can't use multiple objects with that verb.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1272"></child>
+        </children>
+    </item>
+    <item nodeId="node-1272">
+        <command xml:space="preserve">jack plug</command>
+        <result xml:space="preserve">That's not a verb I recognize.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1273"></child>
+        </children>
+    </item>
+    <item nodeId="node-1273">
+        <command xml:space="preserve">look at jack plug</command>
+        <result xml:space="preserve">You can't use multiple objects with that verb.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1274"></child>
+        </children>
+    </item>
+    <item nodeId="node-1274">
+        <command xml:space="preserve">look at jack plugs</command>
+        <result xml:space="preserve">You can't use multiple objects with that verb.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1275"></child>
+        </children>
+    </item>
+    <item nodeId="node-1275">
+        <command xml:space="preserve">showme jack plug</command>
+        <result xml:space="preserve">jack plug - jack plug
+location: part of the jack cable in the box of cables on the floor in Your Room
+singular-named, improper-named, ordinarily enumerated; unlit, inedible, portable, neuter
+list grouping key: none
+printed name: "jack plug"
+printed plural name: "jack plugs"
+indefinite article: none
+description: none
+initial appearance: none
+PS-type: "jack"
+gender: PS-male
+jack plug - jack plug
+location: part of the jack cable in the box of cables on the floor in Your Room
+singular-named, improper-named, ordinarily enumerated; unlit, inedible, portable, neuter
+list grouping key: none
+printed name: "jack plug"
+printed plural name: "jack plugs"
+indefinite article: none
+description: none
+initial appearance: none
+PS-type: "jack"
+gender: PS-male
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1276"></child>
+        </children>
+    </item>
+    <item nodeId="node-1276">
+        <command xml:space="preserve">plug the jack cable into the socket</command>
+        <result xml:space="preserve">Which do you mean, the HDMI socket, white RCA socket, red RCA socket, green jack socket, the HD15 socket, or bottom RCA socket?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1431">
+        <command xml:space="preserve">plug</command>
+        <result xml:space="preserve">What do you want to plug?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1432"></child>
+        </children>
+    </item>
+    <item nodeId="node-1432">
+        <command xml:space="preserve">rca plug</command>
+        <result xml:space="preserve">What do you want to plug the RCA plug into?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1433"></child>
+        </children>
+    </item>
+    <item nodeId="node-1433">
+        <command xml:space="preserve">bottom rca plug</command>
+        <result xml:space="preserve">You typed a rather long command and I didn't understand it. It's better to stick to simpler things like TAKE JACK PLUG.
+
+To stop these messages entirely, type NOVICE OFF.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1434"></child>
+        </children>
+    </item>
+    <item nodeId="node-1434">
+        <command xml:space="preserve">plug rca plug into bottom rca plug</command>
+        <result xml:space="preserve">You typed a rather long command and I didn't understand it. It's better to stick to simpler things like TAKE JACK PLUG.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1435"></child>
+        </children>
+    </item>
+    <item nodeId="node-1435">
+        <command xml:space="preserve">novice off</command>
+        <result xml:space="preserve">Novice mode disabled.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1436"></child>
+        </children>
+    </item>
+    <item nodeId="node-1436">
+        <command xml:space="preserve">plug rca plug into bottom rca plug</command>
+        <result xml:space="preserve">I only understood you as far as wanting to plug the RCA plug into bottom RCA socket.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1437"></child>
+        </children>
+    </item>
+    <item nodeId="node-1437">
+        <command xml:space="preserve">plug rca plug into bottom rca socket</command>
+        <result xml:space="preserve">You plug the RCA plug into bottom RCA socket.
+
+Music is playing from the built-in speakers of your MacBook. You can't hear most of the bass line.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1438"></child>
+        </children>
+    </item>
+    <item nodeId="node-1438">
+        <command xml:space="preserve">look at green jack socket</command>
+        <result xml:space="preserve">It is a female jack connector of the subwoofer. It has nothing plugged into it.
+
+Music is playing from the built-in speakers of your MacBook. You can't hear most of the bass line.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1418">
+        <command xml:space="preserve">look at scenery</command>
+        <result xml:space="preserve">I only understood the first part of that-- trying anyway.
+
+Retrying as:
+&gt;LOOK
+
+Type UNDO if this isn't what you wanted to do, or CORRECT OFF to stop automatically correcting commands.
+
+To stop these messages entirely, type NOVICE OFF.
+
+Your Room
+It's the same room you've been living in for the last year or so. Right now, you're focused on a tiny corner of it: the part with a white table and a stereo system to set up.
+
+Your trusty MacBook sits patiently on the desk, with Spotify open, playing your weekly Discover playlist.
+
+On the white desk are the left speaker, the right speaker, and a Dell monitor.
+
+On the floor are a box of cables (in which are a gray HDMI cable and a jack cable) and a subwoofer.
+
+Music is playing from the built-in speakers of your MacBook. You can't hear most of the bass line.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1415">
+        <command xml:space="preserve">look at desk</command>
+        <result xml:space="preserve">The previous tenants left this here; it's been holding up all your computery stuff ever since.
+
+On the white desk is a MacBook.
+
+Music is playing from the built-in speakers of your MacBook. You can't hear most of the bass line.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1439">
+        <command xml:space="preserve">l white rca socket</command>
+        <result xml:space="preserve">It's labelled "AUX".
+
+Music is playing from the built-in speakers of your MacBook. You can't hear most of the bass line.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1419">
+        <command xml:space="preserve">l spotify</command>
+        <result xml:space="preserve">Way more convinient than having to buy and switch CDs all the time, or maintaining a music collection manually. It even tells you what music to like based on data, magic, and maybe some guesswork. There may be a moral in here about how machine learning is making humans lazier, but who has time to think about that when you have cables to connect. It's playing your Discover Weekly playlist. Black Stone Cherry, Godsmack, Nine Lashes, Rise Against - the good stuff.
+
+Music is playing from the built-in speakers of your MacBook. You can't hear most of the bass line.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1420"></child>
+            <child nodeId="node-1422"></child>
+        </children>
+    </item>
+    <item nodeId="node-1422">
+        <command xml:space="preserve">plug jack cable into jack socket</command>
+        <result xml:space="preserve">You plug the jack cable into green jack socket.
+
+Music is playing from the built-in speakers of your MacBook. You can't hear most of the bass line.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1423"></child>
+        </children>
+    </item>
+    <item nodeId="node-1423">
+        <command xml:space="preserve">unplug jack plug</command>
+        <result xml:space="preserve">There are none at all available!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1424"></child>
+        </children>
+    </item>
+    <item nodeId="node-1424">
+        <command xml:space="preserve">unplug jack cable</command>
+        <result xml:space="preserve">(from the subwoofer)
+You unplug the jack cable from the subwoofer.
+
+Music is playing from the built-in speakers of your MacBook. You can't hear most of the bass line.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1425"></child>
+        </children>
+    </item>
+    <item nodeId="node-1425">
+        <command xml:space="preserve">plug jack plug into jack socket</command>
+        <result xml:space="preserve">You can't use multiple objects with that verb.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1426"></child>
+        </children>
+    </item>
+    <item nodeId="node-1426">
+        <command xml:space="preserve">look at the rca socket</command>
+        <result xml:space="preserve">Which do you mean, 1) white RCA socket, 2) red RCA socket, or 3) bottom RCA socket?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1427"></child>
+        </children>
+    </item>
+    <item nodeId="node-1427">
+        <command xml:space="preserve">3</command>
+        <result xml:space="preserve">It is a female RCA connector of the subwoofer. It has nothing plugged into it.
+
+Music is playing from the built-in speakers of your MacBook. You can't hear most of the bass line.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1428"></child>
+        </children>
+    </item>
+    <item nodeId="node-1428">
+        <command xml:space="preserve">3</command>
+        <result xml:space="preserve">It is a female RCA connector of the subwoofer. It has nothing plugged into it.
+
+Music is playing from the built-in speakers of your MacBook. You can't hear most of the bass line.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1429"></child>
+        </children>
+    </item>
+    <item nodeId="node-1429">
+        <command xml:space="preserve">plug</command>
+        <result xml:space="preserve">(the manual into the manual)
+The manual has no plug.
+
+Music is playing from the built-in speakers of your MacBook. You can't hear most of the bass line.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1430"></child>
+        </children>
+    </item>
+    <item nodeId="node-1430">
+        <command xml:space="preserve">plug rca plug</command>
+        <result xml:space="preserve">(into the manual)
+The manual has no socket.
+
+Music is playing from the built-in speakers of your MacBook. You can't hear most of the bass line.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1420">
+        <command xml:space="preserve">look at spotify</command>
+        <result xml:space="preserve">I only understood the first part of that-- trying anyway.
+
+Retrying as:
+&gt;LOOK
+Your Room
+It's the same room you've been living in for the last year or so. Right now, you're focused on a tiny corner of it: the part with a white table and a stereo system to set up.
+
+Your trusty MacBook sits patiently on the desk, with Spotify open, playing your weekly Discover playlist.
+
+On the white desk are the left speaker, the right speaker, and a Dell monitor.
+
+On the floor are a box of cables (in which are a gray HDMI cable and a jack cable) and a subwoofer.
+
+Music is playing from the built-in speakers of your MacBook. You can't hear most of the bass line.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1416">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Your Room
+It's the same room you've been living in for the last year or so. Right now, you're focused on a tiny corner of it: the part with a white table and a stereo system to set up.
+
+Your trusty MacBook sits patiently on the desk, with Spotify open, playing your weekly Discover playlist.
+
+Next to it is a relatively small Dell monitor.
+
+On the floor are a box of cables (in which are a gray HDMI cable and a jack cable) and a subwoofer.
+
+Music is playing from the built-in speakers of your MacBook. You can't hear most of the bass line.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1417"></child>
+        </children>
+    </item>
+    <item nodeId="node-1417">
+        <command xml:space="preserve">l table</command>
+        <result xml:space="preserve">The previous tenants left this here; it's been holding up all your computery stuff ever since.
+
+On the white desk are a MacBook and a Dell monitor.
+
+Music is playing from the built-in speakers of your MacBook. You can't hear most of the bass line.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1277">
+        <command xml:space="preserve">hint</command>
+        <result xml:space="preserve">This is an interactive fiction game. You control your avatar by typing commands like "look", "look at laptop", "examine hdmi cable", and "plug jack cable into bottom RCA socket" (not something that will work, this last one). Your goal is wire up all the equipment in the room to get a working sound system.
+
+&gt;</result>
+        <commentary xml:space="preserve">This is an interactive fiction game. You control your avatar by typing commands like "look", "look at laptop", "examine hdmi cable", and "plug jack cable into bottom RCA socket" (not something that will work, this last one). Your goal is wire up all the equipment in the room to get a working sound system.
+
+&gt;</commentary>
+        <children><child nodeId="node-1287"></child>
+            <child nodeId="node-1278"></child>
+        </children>
+    </item>
+    <item nodeId="node-1278">
+        <command xml:space="preserve">plug jack cable into bottom RCA socket</command>
+        <result xml:space="preserve">The jack cable has no free plugs that match bottom RCA socket.
+
+Music is playing from the built-in speakers of your MacBook. You can't hear most of the bass line.
+
+&gt;</result>
+        <commentary xml:space="preserve">The jack cable has no free plugs that match bottom RCA socket.
+
+Music is playing from the built-in speakers of your MacBook. You can't hear most of the bass line.
+
+&gt;</commentary>
+        <children><child nodeId="node-1279"></child>
+        </children>
+    </item>
+    <item nodeId="node-1279">
+        <command xml:space="preserve">recording on</command>
+        <result xml:space="preserve">That's not a verb I recognize.
+
+&gt;</result>
+        <commentary xml:space="preserve">That's not a verb I recognize.
+
+&gt;</commentary>
+        <children><child nodeId="node-1280"></child>
+        </children>
+    </item>
+    <item nodeId="node-1280">
+        <command xml:space="preserve">record</command>
+        <result xml:space="preserve">That's not a verb I recognize.
+
+&gt;</result>
+        <commentary xml:space="preserve">That's not a verb I recognize.
+
+&gt;</commentary>
+        <children><child nodeId="node-1281"></child>
+        </children>
+    </item>
+    <item nodeId="node-1281">
+        <command xml:space="preserve">record on</command>
+        <result xml:space="preserve">That's not a verb I recognize.
+
+&gt;</result>
+        <commentary xml:space="preserve">That's not a verb I recognize.
+
+&gt;</commentary>
+        <children><child nodeId="node-1282"></child>
+        </children>
+    </item>
+    <item nodeId="node-1282">
+        <command xml:space="preserve">transcript on</command>
+        <result xml:space="preserve">Start of a transcript of
+
+The not quite stereo
+An Interactive Fiction by Zoltan Nagy
+Release 1 / Serial number 160823 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Identification number: //338274A2-F92E-4404-8BB6-7F9F730D292D//
+Interpreter version 0.5.2 / VM 3.1.2 / Library serial number 080126
+Standard Rules version 3/120430 by Graham Nelson
+Plugs and Sockets version 4/150909 by Sean Turner
+
+&gt;</result>
+        <commentary xml:space="preserve">Start of a transcript of
+
+The not quite stereo
+An Interactive Fiction by Zoltan Nagy
+Release 1 / Serial number 160823 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Identification number: //338274A2-F92E-4404-8BB6-7F9F730D292D//
+Interpreter version 0.5.2 / VM 3.1.2 / Library serial number 080126
+Standard Rules version 3/120430 by Graham Nelson
+Plugs and Sockets version 4/150909 by Sean Turner
+
+&gt;</commentary>
+        <children><child nodeId="node-1283"></child>
+        </children>
+    </item>
+    <item nodeId="node-1283">
+        <command xml:space="preserve">look</command>
+        <result xml:space="preserve">Your Room
+It's the same room you've been living in for the last year or so. Right now, you're focused on a tiny corner of it: the part with a white table and a stereo system to set up.
+
+Your trusty MacBook sits patiently on the desk, with Spotify open, playing your weekly Discover playlist.
+
+Next to it is a relatively small Dell monitor.
+
+On the floor are a box of cables (in which are a gray HDMI cable and a jack cable) and a subwoofer.
+
+Music is playing from the built-in speakers of your MacBook. You can't hear most of the bass line.
+
+&gt;</result>
+        <commentary xml:space="preserve">Your Room
+It's the same room you've been living in for the last year or so. Right now, you're focused on a tiny corner of it: the part with a white table and a stereo system to set up.
+
+Your trusty MacBook sits patiently on the desk, with Spotify open, playing your weekly Discover playlist.
+
+Next to it is a relatively small Dell monitor.
+
+On the floor are a box of cables (in which are a gray HDMI cable and a jack cable) and a subwoofer.
+
+Music is playing from the built-in speakers of your MacBook. You can't hear most of the bass line.
+
+&gt;</commentary>
+        <children><child nodeId="node-1284"></child>
+        </children>
+    </item>
+    <item nodeId="node-1284">
+        <command xml:space="preserve">transcript off</command>
+        <result xml:space="preserve">
+End of transcript.
+
+&gt;</result>
+        <commentary xml:space="preserve">
+End of transcript.
+
+&gt;</commentary>
+        <children><child nodeId="node-1285"></child>
+        </children>
+    </item>
+    <item nodeId="node-1285">
+        <command xml:space="preserve">plug jack plug into laptop</command>
+        <result xml:space="preserve">You can't use multiple objects with that verb.
+
+&gt;</result>
+        <commentary xml:space="preserve">You can't use multiple objects with that verb.
+
+&gt;</commentary>
+        <children><child nodeId="node-1286"></child>
+        </children>
+    </item>
+    <item nodeId="node-1286">
+        <command xml:space="preserve">plug jack cable into laptop</command>
+        <result xml:space="preserve">That doesn't sound right. Maybe you should read the manual.
+
+Music is playing from the built-in speakers of your MacBook. You can't hear most of the bass line.
+
+&gt;</result>
+        <commentary xml:space="preserve">That doesn't sound right. Maybe you should read the manual.
+
+Music is playing from the built-in speakers of your MacBook. You can't hear most of the bass line.
+
+&gt;</commentary>
+    </item>
+    <item nodeId="node-1287">
         <command xml:space="preserve">hint</command>
         <result xml:space="preserve">Remember how you have a manual? How about reading it? Maybe it'll give you some hints.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1726"></child>
+        <children><child nodeId="node-1288"></child>
         </children>
     </item>
-    <item nodeId="node-1726">
+    <item nodeId="node-1288">
         <command xml:space="preserve">hint</command>
         <result xml:space="preserve">I'm out of hints; the next time you ask for help, I'll just give you the solution. Seriously. So be careful what you ask for!
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1727"></child>
+        <children><child nodeId="node-1289"></child>
         </children>
     </item>
-    <item nodeId="node-1727">
+    <item nodeId="node-1289">
         <command xml:space="preserve">hint</command>
         <result xml:space="preserve">Alright, here goes.
 plug left speaker into bottom RCA socket
