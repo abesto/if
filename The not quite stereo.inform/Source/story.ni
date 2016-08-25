@@ -13,8 +13,11 @@ Want in:
 	Karesz
 	
 TODO:
-	time-based song switching. skip song?
-	bug: cables stay in the box when plugging them in
+	Must have:
+		Add PS4 (with RCA cables) 
+		Make Spotify pausable. Play on laptop by default.
+	Nice to have:
+		time-based song switching. skip song?
 ]
 
 The release number is 2.
@@ -221,9 +224,8 @@ The monitor incorporates an HDMI socket.
 The monitor incorporates a jack socket called monitor stereo out.
 
 The floor is here. It is scenery.
-A box of cables is on the floor.
-There is a gray HDMI cable in the box of cables. It incorporates two HDMI plugs.
-There is a jack cable in the box. It incorporates two jack plugs.
+Here is a gray HDMI. It incorporates two HDMI plugs.
+Here is a jack cable. It incorporates two jack plugs.
 
 There is a subwoofer is a channel-agnostic speaker. It is on the floor. The description is "The central part of your brand-new 2.1 stereo system. A moderately sized speaker is staring you in the face from the front. Looking at it, you feel you won't ever turn the volume all the way up - the neighbors would go crazy, not to mention permanent hearing damage.[line break]On the back there are a bunch of sockets. The white and red RCA sockets on top have the label 'AUX'. Below them is a green jack socket with the pictogram of a little musical note next to it. Below that sits a large, vertical HD15 socket labeled 'Right speaker', and finally an RCA socket with 'Left speaker' written next to it."
 It incorporates an RCA socket called white RCA socket. Instead of examining the white RCA socket, say "A female RCA connector on the subwoofer. The plastic rim of the socket is white. It's labelled 'AUX'. [They] [have] [if the attachment of the noun is nothing]nothing[else][the holder of the attachment of the noun][end if] plugged into it."
