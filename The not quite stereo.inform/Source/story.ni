@@ -23,7 +23,7 @@ TODO:
 		time-based song switching. skip song?
 ]
 
-The release number is 2.
+The release number is 3.
 The story headline is "A story of the Chaos of Cables".
 The story creation year is 2016.
 
