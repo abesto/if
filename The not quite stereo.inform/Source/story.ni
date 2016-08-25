@@ -7,6 +7,9 @@ Feedback:
 			https://gist.github.com/abesto/759b614c55a9de19f6c642609fe43eeb
 		Zsol:
 			https://gist.github.com/zsol/b9eaf92c21417ee7bec98e4ed76ba3ca
+	Release 2:
+		Zsol: 
+			https://gist.github.com/zsol/1751fda2f4aee68308edba299f304daf
 
 		
 Want in:
@@ -121,7 +124,7 @@ To decide what number is the signal level (producer - a signal producer) propaga
 	if the producer might pass signals to the target on channel:
 		if conn-tracing is true, say "[signal level of the producer].";
 		decide on the signal level of the producer;
-	say "might not.", if conn-tracing is true;
+	if conn-tracing is true, say "might not.";
 	decide on 0.
 
 Section 3 - Introspect signal propagation - Not for release
@@ -224,7 +227,7 @@ The monitor incorporates an HDMI socket.
 The monitor incorporates a jack socket called monitor stereo out.
 
 The floor is here. It is scenery.
-Here is a gray HDMI. It incorporates two HDMI plugs.
+Here is a gray HDMI cable. It incorporates two HDMI plugs.
 Here is a jack cable. It incorporates two jack plugs.
 
 There is a subwoofer is a channel-agnostic speaker. It is on the floor. The description is "The central part of your brand-new 2.1 stereo system. A moderately sized speaker is staring you in the face from the front. Looking at it, you feel you won't ever turn the volume all the way up - the neighbors would go crazy, not to mention permanent hearing damage.[line break]On the back there are a bunch of sockets. The white and red RCA sockets on top have the label 'AUX'. Below them is a green jack socket with the pictogram of a little musical note next to it. Below that sits a large, vertical HD15 socket labeled 'Right speaker', and finally an RCA socket with 'Left speaker' written next to it."
@@ -252,7 +255,7 @@ Check plugging something (called P) into the something (called S) (this is the d
 	if P is the jack cable, and S is the MacBook:
 		say "That doesn't sound right. Maybe you should read the manual." instead.
 	
-Report plugging the HDMI cable into a thing (this is the plugging-hdmi-cable rule):
+Report plugging the HDMI cable into something (this is the plugging-hdmi-cable rule):
 	if HDMI is connected:
 		say "The screen of your laptop goes black. After a few seconds the display comes back to life, along with the external Dell monitor, which is now mirroring the display of the MacBook."
 		
