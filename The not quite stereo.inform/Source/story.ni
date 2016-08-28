@@ -19,7 +19,6 @@ TODO:
 	Must have:
 		After tutorial:
 			Add splitter
-			Implement switching for the right speaker
 			Two RCA jacks of the same cable can't go into the same thing :/
 	Nice to have:
 		time-based song switching. skip song?
@@ -178,9 +177,11 @@ Carry out measuring something (called a) to something (called b):
 	
 Section 4 - Speakers
 
-A speaker is a kind of thing. A speaker is either channel-based or channel-agnostic. A speaker has a channel.
+A speaker is a kind of thing. A speaker is either channel-based or channel-agnostic. A speaker has a channel. A speaker is either enabled or disabled. A speaker is usually enabled.
 
 To decide what number is the output level of (S - a speaker):
+	if S is disabled:
+		decide on 0;
 	if S is channel-based:
 		decide on the inbound signal level of S on the channel of S;
 	otherwise:
@@ -218,7 +219,7 @@ To decide if HDMI is connected:
 		yes;
 	otherwise:
 		no.
-		
+
 Section 2 - Tutorial
 
 Tutorial is a scene. Tutorial begins when play begins.
@@ -249,10 +250,18 @@ The left speaker is a channel-based speaker. The channel of the left speaker is 
 The left speaker RCA cable is a thing. It is part of the left speaker. It is hard-wired to the left speaker. It incorporates an RCA plug.
 
 [ Right speaker ]
-The right speaker is a channel-based speaker. The channel of the right speaker is the right channel. It is on the desk. Indefinite article is "the". The description is "It has a white THX logo on top. Two jack sockets are built into its side. There's  a tiny headphone pictogram above the top one, and a (similarly tiny) music note icon below the bottom one. There's an HD15 D-Sub cable hard-wired into its back. It looks just the same as a VGA cable, but the innards are quite different."
+The right speaker is a channel-based speaker with channel right channel. It is on the desk. Indefinite article is "the". The description is "It has a white THX logo on top. Two jack sockets are built into its side. There's  a tiny headphone pictogram above the top one, and a (similarly tiny) music note icon below the bottom one. There's an HD15 D-Sub cable hard-wired into its back. It looks just the same as a VGA cable, but the innards are quite different."
 The right speaker incorporates a jack socket called headphone out.
 The right speaker incorporates a jack socket called media in.
-The right speaker HD15 cable is part of the right speaker. It is hard-wired to the right speaker. It incorporates an HD15 plug.
+The right speaker HD15 cable is part of the right speaker. It incorporates an HD15 plug called the hd15-plug. It is hard-wired to the right speaker.
+
+[ This would ideally be implemented by the right speaker being a switch. Failed miserably, cheating. ]
+Definition: the right speaker is disabled if headphone out is socket-occupied.
+Definition: the left speaker is disabled if headphone out is socket-occupied.
+Definition: the subwoofer is disabled if headphone out is socket-occupied.
+Check plugging something into the headphone out:
+	unless the noun is the headphones cable:
+		say "Only the headphones cable should be plugged into the headphone out socket." instead.
 
 [ Monitor ]
 A Dell monitor is on the desk.
@@ -291,7 +300,7 @@ Instead of examining the manual, say "A five-page pamphlet with lots of tiny let
 [ Disable stuff for the duration of the tutorial ]
 Instead of plugging a thing into the right speaker (this is the don't-plug-into-speaker rule):
 	if tutorial is happening:
-		say "That doesn't sound right. Maybe you should read the manual."
+		say "That doesn't sound right. Maybe you should read the manual." instead.
 Check plugging something (called P) into the something (called S) (this is the don't-plug-jack-into-laptop rule):
 	if tutorial is happening and P is the jack cable, and S is the MacBook:
 		say "That doesn't sound right. Maybe you should read the manual." instead.	
