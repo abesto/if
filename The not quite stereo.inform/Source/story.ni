@@ -20,6 +20,7 @@ TODO:
 		After tutorial:
 			Add splitter
 			Implement switching for the right speaker
+			Two RCA jacks of the same cable can't go into the same thing :/
 	Nice to have:
 		time-based song switching. skip song?
 		Explain the puzzle in "amusing"
@@ -75,6 +76,12 @@ To decide if (connector - a PS-connector) is faulty on (channel - a channel):
 		yes;
 	no.
 	
+To decide if (connector - a PS-connector) is not faulty on (channel - a channel):
+	if connector is faulty on channel:
+		no;
+	else:
+		yes.
+	
 [ Sometimes things are hard-wired to each other ]
 Hard-wired relates things to each other. The verb to be hard-wired to means the hard-wired relation.
 
@@ -112,7 +119,7 @@ To decide what number is the signal level (origin - a thing) propagates to (targ
 	unless origin signals target on channel:
 		if conn-tracing is true, say "might not.";
 		decide on 0;	
-	let level be 0;	
+	let level be 0;
 	repeat with loop running through the things signaling origin on channel:
 		if conn-tracing is true, say "via [loop] ";
 		if loop is not target:
@@ -143,22 +150,19 @@ To decide what number is the signal level (producer - a signal producer) propaga
 [ Switches generate signals for the first connected output they have (from a fixed list), and none for the others ]
 A switch is a kind of thing. It has a list of things called the priority output list.
 
-To decide what thing is the first connected output of (switch - a switch) on (channel - a channel):
+To decide what thing is the first connected component of (switch - a switch) on (channel - a channel):
 	repeat with candidate running through the priority output list of the switch:
 		if switch is hard-wired to candidate:
 			decide on candidate;
-		if candidate is socket-occupied:
-			unless candidate is faulty on channel, decide on the holder of the attachment of the candidate.
+		if candidate is socket-occupied, and candidate is not faulty on channel:
+			decide on the holder of the attachment of the candidate.
 
 To decide if (switch - a switch) signals (target - a thing) on (channel - a channel):
-	let first-connected-output be the first connected output of the switch on channel;
-	if conn-tracing is true, say "(selected output: [first-connected-output]) ";
-	if target is first-connected-output:
+	let first-component be the first connected component of switch on channel;
+	if target is first-component:
 		yes;
-	otherwise:
-		if conn-tracing is true, say "not first output.";
+	else:
 		no.
-
 
 Section 3 - Introspect signal propagation - Not for release
 
@@ -227,15 +231,15 @@ Here is a white desk. The white desk is scenery. Description of the white desk i
 A MacBook is on the desk. "Your trusty MacBook sits patiently on the desk, with Spotify open, playing your weekly Discover playlist."
 The description is "This model has both an hour and a stereo audio (small jack) output. A glance at the screen confirms Spotify is still playing."
 
-[ The MacBook as signal producer ]
+[ Producing signals from the MacBook ]
 The audio card is a signal producer with signal level 1.
 The MacBook is a switch. It is hard-wired to the audio card.
 
-The MacBook incorporates an HDMI socket called HDMI out. HDMI out is hard-wired to the MacBook switch.
-The MacBook incorporates a jack socket called stereo out. Stereo out is hard-wired to the MacBook switch.
+The MacBook incorporates an HDMI socket called HDMI out.
+The MacBook incorporates a jack socket called stereo out.
 
 [ MacBook speakers ]
-The built-in speaker is a channel-agnostic speaker. It is part of the MacBook. It is hard-wired to the MacBook switch.
+The built-in speaker is a channel-agnostic speaker. It is part of the MacBook. It is hard-wired to the MacBook.
 
 BlueTooth audio adapter is a thing. [ Needs to be here for the below list, rest of the definition in Debugging ]
 The priority output list of the MacBook is {stereo out, HDMI out, BlueTooth audio adapter, built-in speaker}.
