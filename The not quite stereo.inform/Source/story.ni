@@ -96,7 +96,7 @@ To decide what list of things is the things signaling (target - a thing) on (cha
 		if connector-two is not nothing:
 			let origin be the holder of connector-two;
 			unless connector-one is faulty on channel, or connector-two is faulty on channel:
-				if conn-tracing is true, say "(Connection: [origin] -> [connector-two] -> [connector-one] -> [target]) ";
+				if conn-tracing is true, say "(Connection: [origin] -> [connector-two] -> [connector-one] -> [target]) ";									
 				add origin to origins;
 	decide on origins.
 
@@ -109,21 +109,28 @@ To decide if (origin - a thing) signals (target - a thing) on (channel - a chann
 		no.
 
 [ Signal level calculation along passed signal paths ]
-To decide what number is the signal level (origin - a thing) propagates to (target - a thing) on (channel - a channel):
+To decide what number is the outbound signal level of (origin - a thing) on (channel - a channel) having visited (acc - a list of things):
+	let level be 0;		
+	add origin to acc;
+	repeat with loop running through the things signaling origin on channel:
+		if conn-tracing is true, say "via [loop] ";
+		if loop is listed in acc:
+			if conn-tracing is true, say "0 because [loop] is visited ";
+		otherwise:
+			let this-level be the outbound signal level of loop on channel having visited acc;
+			if conn-tracing is true, say "[this-level] ";			
+			increase the level by this-level;
+	if conn-tracing is true, say "finally [level].";
+	decide on level.
+	
+To decide what number is the signal level (origin - a thing) propagates to (target - a thing) on (channel - a channel):	
 	if conn-tracing is true, say "[origin] -> [target]: ";
 	unless origin signals target on channel:
 		if conn-tracing is true, say "might not.";
 		decide on 0;	
-	let level be 0;
-	repeat with loop running through the things signaling origin on channel:
-		if conn-tracing is true, say "via [loop] ";
-		if loop is not target:
-			if conn-tracing is true, say "[the signal level loop propagates to origin on channel] ";
-			increase the level by the signal level loop propagates to origin on channel;
-		otherwise:
-			if conn-tracing is true, say "0 because target ";
-	if conn-tracing is true, say "finally [level].";
-	decide on level.
+	let L be a list of things;
+	add target to L;
+	decide on the outbound signal level of origin on channel having visited L.
 	
 To decide what number is the inbound signal level of (component - a thing) on (channel - a channel):
 	let level be 0;
@@ -134,13 +141,9 @@ To decide what number is the inbound signal level of (component - a thing) on (c
 [ Signal producers ]
 A signal producer is a kind of thing. It has a number called the signal level.
 
-To decide what number is the signal level (producer - a signal producer) propagates to (target - a thing) on (channel - a channel):
-	if conn-tracing is true, say "producer [producer] -> target [target] on [channel]: ";
-	if the producer signals the target on channel:
-		if conn-tracing is true, say "[signal level of the producer].";
-		decide on the signal level of the producer;
-	if conn-tracing is true, say "might not.";
-	decide on 0.
+To decide what number is the outbound signal level of (producer - a signal producer) on (channel - a channel) having visited (acc - a list of things):
+	if conn-tracing is true, say "producer on [channel]: [signal level of the producer]";
+	decide on the signal level of the producer;
 	
 [ Switches generate signals for the first connected output they have (from a fixed list), and none for the others ]
 A switch is a kind of thing. It has a list of things called the priority output list.
