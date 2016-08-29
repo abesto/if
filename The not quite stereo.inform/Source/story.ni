@@ -16,10 +16,6 @@ Want in:
 	Karesz
 	
 TODO:
-	Must have:
-		After tutorial:
-			Add splitter
-			Two RCA jacks of the same cable can't go into the same thing :/
 	Nice to have:
 		time-based song switching. skip song?
 		Explain the puzzle in "amusing"
@@ -273,8 +269,7 @@ The monitor incorporates a jack socket called monitor stereo out.
 [ Subwoofer ]
 The floor is here. It is scenery.
 There is a subwoofer is a channel-agnostic speaker. It is on the floor. The description is "The central part of your brand-new 2.1 stereo system. A moderately sized speaker is staring you in the face from the front. Looking at it, you feel you won't ever turn the volume all the way up - the neighbors would go crazy, not to mention permanent hearing damage.[line break]On the back there are a bunch of sockets. The white and red RCA sockets on top have the label 'AUX'. Below them is a green jack socket with the pictogram of a little musical note next to it. Below that sits a large, vertical HD15 socket labeled 'Right speaker', and finally an RCA socket with 'Left speaker' written next to it."
-It incorporates an RCA socket called white RCA socket. Instead of examining the white RCA socket, say "A female RCA connector on the subwoofer. The plastic rim of the socket is white. It's labelled 'AUX'. [They] [have] [if the attachment of the noun is nothing]nothing[else][the holder of the attachment of the noun][end if] plugged into it."
-It incorporates an RCA socket called red RCA socket. Instead of examining the red RCA socket, say "A female RCA connector on the subwoofer. The plastic rim of the socket is red. It's labelled 'AUX'. [They] [have] [if the attachment of the noun is nothing]nothing[else][the holder of the attachment of the noun][end if] plugged into it."
+It incorporates an RCA socket called AUX. Instead of examining AUX, say "Two female RCA connectors on the subwoofer - one red, one white. [They] [have] [if the attachment of the noun is nothing]nothing[else][the holder of the attachment of the noun][end if] plugged into it."
 It incorporates a jack socket called green jack socket. Instead of examining the green jack socket, say "A femal jack connector on the subwoofer. The rim of the socket is green. The pictogram of a musical note is next to it on the plastic cover. [They] [have] [if the attachment of the noun is nothing]nothing[else][the holder of the attachment of the noun][end if] plugged into it."
 It incorporates an HD15 socket. Instead of examining the HD15 socket, say "A female HD15 connector. Looks a lot like a VGA connector, but is very different on the inside. The words 'Right speaker' are printed in white next to it in white. [They] [have] [if the attachment of the noun is nothing]nothing[else][the holder of the attachment of the noun][end if] plugged into it."
 It incorporates an RCA socket called bottom RCA socket. Instead of examining the bottom RCA socket, say "A female RCA connector on the subwoofer. The plastic rim of the socket is black. The words 'Left speaker' are printed next to it in white. [They] [have] [if the attachment of the noun is nothing]nothing[else][the holder of the attachment of the noun][end if] plugged into it."
@@ -285,12 +280,10 @@ Here is a jack cable. It incorporates two jack plugs.
 
 [ Mono sockets ]
 Bottom RCA socket is right-faulty.
-[ White RCA socket is right-faulty. -- Except it's totally dead, see below. ]
-Red RCA socket is left-faulty.
 
 [ This is the problem the player will debug later on ]
 Green jack socket is right-faulty.
-White RCA socket is both-faulty.
+AUX is left-faulty.
 
 [ The manual ]
 The manual is on the desk.
@@ -343,15 +336,21 @@ Debugging begins when the output level of the subwoofer is 1, and the output lev
 
 [ RCA cable ]
 The RCA-jack cable is in the storage room.
-The red RCA end of the RCA-jack cable is an RCA plug. It is part of the RCA-jack cable.
-The white RCA end of the RCA-jack cable is an RCA plug. It is part of the RCA-jack cable.
+The RCA-jack cable incorporates an RCA plug.
 The RCA-jack cable incorporates a jack plug.
+
+[ Splitter ]
+The splitter is in the storage room.
+The splitter incorporates a jack plug.
+The splitter incorporates two jack sockets.
 
 When Debugging begins:
 	say "It's done.[line break]You've connected all the wires, the system is alive. Clean, strong bass is pumping out the subwoofer, and the speakers on the desk give you the best listening of Korn you've had in a while. You sit back, close your eyes...[paragraph break]Then you turn your head to the left a bit, then to the right... Something's not right. It's like the stereo is not stereo after all. Only one speaker is blasting Korn, the other is just sitting there quietly. How can this be? It's a brand new system![paragraph break]Alright, don't panic. You can do this. There must be a way to connect up things in a way that both speakers work. The manual obviously didn't work, so let's ignore that from now on. There are a lot of things that may be going wrong. It could be any cable. Maybe the display? You remember the guy you bought it from saying something was wrong with it. Or maybe the MacBook gave up in the end. It could be anything![paragraph break]You bring out a few more items from storage to help figure out what's wrong.";
 	now the headphones are in your room;
 	now the bluetooth audio adapter is in your room;
+	now the splitter is in your room;
 	now the RCA-jack cable is in your room.
+
 		
 Section 4 - Ambience
 
