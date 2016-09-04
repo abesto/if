@@ -1,34 +1,23 @@
 "The not quite stereo" by Zoltan Nagy
 
 [
-Feedback:
-	Release 1:
-		Kepten:
-			https://gist.github.com/abesto/759b614c55a9de19f6c642609fe43eeb
-		Zsol:
-			https://gist.github.com/zsol/b9eaf92c21417ee7bec98e4ed76ba3ca
-	Release 2:
-		Zsol: 
-			https://gist.github.com/zsol/1751fda2f4aee68308edba299f304daf
-
-		
-Want in:
-	Karesz
+Testers: Karesz, Kepten, Zsol
 	
 TODO:
-	Nice to have:
-		time-based song switching. skip song?
-		Explain the puzzle in "amusing"
+	Document changed dependencies, used version numbers etc.
+	time-based song switching. skip song action?
 ]
 
-The release number is 3.
+The release number is 4.
 The story headline is "A story of the Chaos of Cables".
 The story creation year is 2016.
+Release along with an introductory postcard, the introductory booklet, and an interpreter.
 
 Include Plugs and Sockets by Sean Turner.
 Include Smarter Parser by Aaron Reed.
 Include Commonly Unimplemented by Aaron Reed.
 Include Numbered Disambiguation Choices by Aaron Reed.
+Include Adaptive Hints by Eric Eve.
 
 Chapter 1 - Prodecure
 
@@ -205,8 +194,7 @@ Instead of listening to a speaker (called S):
 Section 5 - Pre-release notes
 
 When play begins:
-	say "This is a not-even-alpha version of a game about cables and music. If you encounter frustration or confusion, this is not (yet) intended; please let me know.[line break]If you're playing this in an interpreter (not in-browser), please type 'transcript on' to create a recording of your session to be used for debugging any problems. Otherwise, please copy-paste the session into an e-mail. In either case, please send to abesto0@gmail.com, along with any feedback.[line break]If you get stuck, you can type 'hint' to get a hint. The first one is free: you can type 'hint' multiple times for increasingly spoilery hints.[paragraph break]";
-	say "A note on talking to the game: due to limitations of the engine, some phrasings will work better for plugging things in than others. For best results, plug cables into objects (like 'plug HDMI cable into monitor'), or into specific sockets (like 'plug jack cable into headphone out')."
+	say "A note on talking to the game: due to limitations of the engine, some phrasings will work better for plugging things in than others. For best results, plug cables into objects (like 'plug HDMI cable into monitor'), or into specific sockets (like 'plug jack cable into headphone out'). If you get stuck, try typing 'hint'."
 
 
 Chapter 2 - The Game
@@ -229,7 +217,7 @@ Here is a white desk. The white desk is scenery. Description of the white desk i
 
 [ MacBook ]
 A MacBook is on the desk. "Your trusty MacBook sits patiently on the desk, with Spotify open, playing your weekly Discover playlist."
-The description is "This model has both an hour and a stereo audio (small jack) output. A glance at the screen confirms Spotify is still playing."
+The description is "This model has both an hour and a stereo audio (small jack) output. A glance at the screen confirms Spotify is still playing. You can also see an icon on the top of the screen indicating that [the first connected component of macbook on left channel] is the active audio output device."
 
 [ Producing signals from the MacBook ]
 The audio card is a signal producer with signal level 1.
@@ -242,7 +230,7 @@ The MacBook incorporates a jack socket called stereo out.
 The built-in speaker is a channel-agnostic speaker. It is part of the MacBook. It is hard-wired to the MacBook.
 
 BlueTooth audio adapter is a thing. [ Needs to be here for the below list, rest of the definition in Debugging ]
-The priority output list of the MacBook is {stereo out, HDMI out, BlueTooth audio adapter, built-in speaker}.
+The priority output list of the MacBook is {stereo out, BlueTooth audio adapter, HDMI out, built-in speaker}.
 
 [ Left speaker ]
 The left speaker is a channel-based speaker. The channel of the left speaker is the left channel. It is on the desk. Indefinite article is "the". The description is "It has a white THX logo on top. There's an RCA cable hard-wired into its back."
@@ -265,7 +253,7 @@ Check plugging something into the headphone out:
 [ Monitor ]
 A Dell monitor is on the desk.
 The description is "You always mean to get a bigger one, but one step at a time - for now, let's set up the stereo.
-[if HDMI is connected]The display mirrors the display of your MacBook, with a maximized Spotify window.[otherwise]The display has a 'No Input' message moving around on it.[end if] On the back of the screen there's an HDMI input, and a small jack (output) socket. They're kind of hard to reach, but by now you can plug cables into them by touch."
+[if HDMI is connected]The display mirrors the display of your MacBook.[otherwise]The display has a 'No Input' message moving around on it.[end if] On the back of the screen there's an HDMI input, and a small jack (output) socket. They're kind of hard to reach, but by now you can plug cables into them by touch."
 The monitor incorporates an HDMI socket.
 The monitor incorporates a jack socket called monitor stereo out.
 
@@ -299,29 +287,33 @@ Instead of plugging a thing into the right speaker (this is the don't-plug-into-
 		say "That doesn't sound right. Maybe you should read the manual." instead.
 Check plugging something (called P) into the something (called S) (this is the don't-plug-jack-into-laptop rule):
 	if tutorial is happening and P is the jack cable, and S is the MacBook:
-		say "That doesn't sound right. Maybe you should read the manual." instead.	
-		
-[ Hints ]
-Asking for help is an action out of world. Understand "help", "hint", "hints" as asking for help.
-Carry out asking for help for the first time: say "This is an interactive fiction game. You control your avatar by typing commands like 'look', 'look at laptop', 'examine hdmi cable', and 'plug jack cable into bottom RCA socket' (not something that will work, this last one). Your goal is wire up all the equipment in the room to get a working sound system."
-Carry out asking for help for the second time: say "Remember how you have a manual? How about reading it? Maybe it'll give you some hints."
-Carry out asking for help for the third time: say "I'm out of hints; the next time you ask for help, I'll just give you the solution. Seriously. So be careful what you ask for!"
-Carry out asking for help at least four times: say "Alright, here goes.[line break]plug left speaker into bottom RCA socket[line break]plug right speaker into subwoofer[line break]plug HDMI cable into laptop[line break]plug HDMI cable into monitor[line break]plug jack cable into monitor[line break]plug jack cable into subwoofer".
-		
-test plug-all with "plug left speaker RCA cable into bottom RCA socket / plug right speaker cable into subwoofer / plug hdmi cable into laptop / plug hdmi cable into screen / plug jack cable into screen / plug jack cable into subwoofer".
-		
+		say "That doesn't sound right. Maybe you should read the manual." instead.
+				
 Section 3 - Debugging - the actual puzzle
 
 Storage room is a room. [ Used to keep items until we move them into the playroom ]
 
 [ BT adapter ]
 The BlueTooth audio adapter is in the storage room.
-The description of the BlueTooth audio adapter is "A tiny box you can use to play music without having to plug cables into your laptop. You can either 'connect bluetooth' or 'disconnect blootooth'. It has a jack output."
+
+To decide whether the bluetooth adapter is connected:
+	if the inbound signal level of bluetooth audio adapter on left channel is greater than 0:
+		yes;
+	otherwise:
+		no.
+
+The description of the BlueTooth audio adapter is "A tiny box you can use to play music without having to plug cables into your laptop. You can either 'connect bluetooth' or 'disconnect blootooth'. It has a jack output socket. [if the bluetooth adapter is connected]Its status indicator led is glowing a happy blue to tell you it's receiving an audio signal.[otherwise]A small status indicator led is built into its cover, currently dark."
 The BlueTooth adapter incorporates a jack socket.
 
 Connecting BlueTooth is an action applying to nothing. Understand "connect bluetooth" as connecting bluetooth.
-Carry out connecting bluetooth:
-	now the BlueTooth audio adapter is hard-wired 	to the MacBook.
+Carry out connecting bluetooth:	
+	now the BlueTooth audio adapter is hard-wired to the MacBook.
+	
+Report connecting bluetooth:
+	say "The blue status light on the BT adapter flashes once, then stays on."	
+	
+Report disconnecting bluetooth:
+	say "The blue status light on the BT adapter goes dark."
 	
 Disconnecting BlueTooth is an action applying to nothing. Understand "disconnect bluetooth" as disconnecting bluetooth.
 Carry out disconnecting bluetooth:
@@ -343,19 +335,69 @@ The RCA-jack cable incorporates an RCA plug.
 The RCA-jack cable incorporates a jack plug.
 
 [ Splitter ]
-The splitter is in the storage room.
+The splitter is in the storage room. The description of the splitter is "A small black triangle with a stereo jack plug on one of its ponts, and two stereo jack sockets on the opposite edge. Sound comes in via its single jack plug, and the same signal goes out on both sockets." 
 The splitter incorporates a jack plug.
 The splitter incorporates two jack sockets.
 
 When Debugging begins:
-	say "It's done.[line break]You've connected all the wires, the system is alive. Clean, strong bass is pumping out the subwoofer, and the speakers on the desk give you the best listening of Korn you've had in a while. You sit back, close your eyes...[paragraph break]Then you turn your head to the left a bit, then to the right... Something's not right. It's like the stereo is not stereo after all. Only one speaker is blasting Korn, the other is just sitting there quietly. How can this be? It's a brand new system![paragraph break]Alright, don't panic. You can do this. There must be a way to connect up things in a way that both speakers work. The manual obviously didn't work, so let's ignore that from now on. There are a lot of things that may be going wrong. It could be any cable. Maybe the display? You remember the guy you bought it from saying something was wrong with it. Or maybe the MacBook gave up in the end. It could be anything![paragraph break]You bring out a few more items from storage to help figure out what's wrong.";
+	say "It's done.[line break]You've connected all the wires, the system is alive. Clean, strong bass is pumping out the subwoofer, and the speakers on the desk give you the best listening of Korn you've had in a while. You sit back, close your eyes...[paragraph break]Then you turn your head to the left a bit, then to the right... Something's not right. It's like the stereo is not stereo after all. Only one speaker is blasting Korn, the other is just sitting there quietly. How can this be? It's a brand new system![paragraph break]Alright, don't panic. You can do this. There must be a way to connect up things in a way that both speakers work. The manual obviously didn't work, so let's ignore that from now on. There are a lot of things that may be going wrong. It could be any cable. Maybe the display? You remember the guy you bought it from saying something was wrong with it. Or maybe the MacBook gave up in the end. It could be anything![paragraph break]After digging through a box of all the gadgets you collected over the years, you're now armed with a BlueTooth audio adapter, a stereo splitter, and headphones to debug the problem.";
 	now the headphones are in your room;
 	now the bluetooth audio adapter is in your room;
 	now the splitter is in your room;
 	now the RCA-jack cable is in your room.
+	
+Section 4 - Hints
 
+	
+Table of Potential Hints (continued)
+title	subtable
+"Solving the first puzzle"	Table of Tutorial Hints
+"Getting sound out of both speakers"	Table of Debugging Hints
+
+Table of Tutorial Hints
+hint	used
+"This is an interactive fiction game. You control your avatar by typing commands like 'look', 'look at laptop', 'examine hdmi cable', and 'plug jack cable into bottom RCA socket' (not something that will work, this last one). Your goal is wire up all the equipment in the room to get a working sound system."	a number
+"Remember how you have a manual? How about reading it? Maybe it'll give you some hints."
+"I'm out of hints; the next time you ask for help, I'll just give you the solution for this first part of the game. Seriously. So be careful what you ask for!"
+"Alright, here goes.[line break]plug left speaker into bottom RCA socket[line break]plug right speaker into subwoofer[line break]plug HDMI cable into laptop[line break]plug HDMI cable into monitor[line break]plug jack cable into monitor[line break]plug jack cable into subwoofer".
+
+Table of Debugging Hints
+hint	used
+"How do you get it all working?"	a number
+"It sounds like there's sound coming out of only one speaker, once everything is wired up as the manual says. It's time to ignore the manual, and figure out what's wrong using good old trial-and-error."
+"Something's obviously broken. What could it be? What are all the involved components?"
+"Any piece of hardware could be faulty - is it one of the speakers? Maybe display doesn't pass one channel from HDMI to jack? Or maybe one of the sockets or jacks have a manufacturing error. Of course cables are always good bets, they tend to wear out over time."
+"If all else fails, you could come up with configurations that should work, and try them out - maybe some of them will."
+"How about eliminating as many components as possible? How can you wire things up with the fewest possible cables? (Watch out, the next hint will give you a solution)"
+"Try directly connecting, with the jack cable, the MacBook to the media input on the right speaker."
+
+When tutorial begins:
+	Activate the Table of Tutorial Hints.
+	
+When tutorial ends:
+	Deactivate the Table of Tutorial Hints.
+	
+When debugging begins:
+	Activate the Table of Debugging Hints.
+	
+When debugging ends:
+	Deactivate the Table of Debugging Hints.
+
+Section 5 - Victory
+
+Every turn:
+	if the output level of the left speaker is 1, and the output level of the right speaker is one, and the output level of the subwoofer is 1:
+		end the story finally saying "Congratulations, you've created a configuration where music plays cleanly through the audio system. Time to kick back and relax! Did you figure out which part(s) is/are broken? Typing 'AMUSING' will tell you, as well as all the various ways you can get a working system. Collect them all! Or you could UNDO and try to figure it out yourself."
 		
-Section 4 - Ambience
+Rule for amusing a victorious player:
+	say "Want me to describe what exactly is wrong in the sound system? Watch out, this totally spoils the puzzle.";
+	if the player consents:
+		say "There are two hardware problems. Both the RCA and the jack inputs of the subwoofer are broken, but in different ways. On the RCA input, the left channel is lost; on the jack input, the right channel is lost. This means that to get a working system, we either need to not use the subwoofer as input into the stereo system (but use the 'media in' on the right speaker instead), or use the splitter to send the same signal via both inputs into the subwoofer.";
+	say "Want me to tell you all six ways you can set up a working system? (How many did you find? Did I miss any?)";
+	if the player consents:
+		say "1. Directly connect the MacBook to the media input of the right speaker.[line break]2. With the display connected to the MacBook, connect the display to the media input of the right speaker.[line break]3. The splitter goes into the MacBook; both the jack cable and the RCA-jack cable connect the splitter to the subwoofer.[line break]4. The splitter goes into the display (which is connected to the MacBook). Both the jack cable and the RCA-jack cable connect the splitter to the subwoofer.[line break]5. 'Connect Bluetooth' to send audio from the MacBook to the BT audio adapter. Connect it via the jack cable to the media input on the right speaker.[line break]6. Connect Bluetooth; plug the splitter into the BT adapter. Both the jack cable and the RCA-jack cable connect the splitter to the subwoofer."
+		
+Section 6 - Ambience
 
 Spotify is scenery. It is in your room. The description is "Way more convinient than having to buy and switch CDs all the time, or maintaining a music collection manually. It even tells you what music to like based on data, magic, and maybe some guesswork. There may be a moral in here about how machine learning is making humans lazier, but who has time to think about that when you have cables to connect. It's playing your Discover Weekly playlist. Black Stone Cherry, Godsmack, Nine Lashes, Rise Against - the good stuff."
 
@@ -366,7 +408,7 @@ Report plugging the HDMI cable into something (this is the plugging-hdmi-cable r
 The plugging-hdmi-cable rule is listed after the report-plugging it into rule in the report plugging it into rules.
 
 
-Section 5 - Listening
+Section 7 - Listening
 		
 Every turn:
 	if the player is wearing the headphones:
@@ -380,7 +422,7 @@ Every turn:
 		try listening to the right speaker;
 		say "[paragraph break]".
 				
-Section 6 - Glossary
+Section 8 - Glossary
 
 Understand "satellite" as speaker.
 Understand "jack out" as stereo out.
@@ -390,5 +432,20 @@ Understand "screen" or "display" as monitor.
 Understand "table" as desk.
 Understand "BT" as BlueTooth.
 Understand "music receiver" as audio adapter.
+Understand "media input" as media in.
 
-Release along with an introductory postcard, the introductory booklet, and an interpreter.
+Chapter 3 - Testing - Not for release
+
+test tutorial with "plug left speaker RCA cable into bottom RCA socket / plug right speaker cable into subwoofer / plug hdmi cable into laptop / plug hdmi cable into screen / plug jack cable into screen / plug jack cable into subwoofer".
+
+test win-direct-jack with "test tutorial / unplug jack cable from subwoofer / unplug jack cable from display / plug jack cable into macbook / plug jack cable into media in".
+
+test win-display-media with "test tutorial / unplug jack cable from subwoofer / plug jack cable into media in".
+
+test win-splitter-macbook with "test tutorial / unplug jack cable from subwoofer / unplug jack cable from display / plug splitter into macbook / plug jack cable into splitter / plug rca-jack cable into splitter / plug jack cable into subwoofer / plug rca-jack cable into subwoofer".
+
+test win-splitter-display with "test tutorial / unplug jack cable from subwoofer / unplug jack cable from display / plug splitter into display / plug jack cable into splitter / plug rca-jack cable into splitter / plug jack cable into subwoofer / plug rca-jack cable into subwoofer".
+
+test win-bluetooth-media with "test tutorial / connect bluetooth / disconnect bluetooth / connect bluetooth / unplug jack cable from subwoofer / unplug jack cable from display / plug jack cable into bluetooth adapter / plug jack cable into media in".
+
+test win-bluetooth-splitter with "test tutorial / connect bluetooth / unplug jack cable from subwoofer / unplug jack cable from display / plug splitter into bluetooth adapter / plug jack cable into splitter / plug rca-jack cable into splitter / plug jack cable into subwoofer / plug rca-jack cable into subwoofer".
