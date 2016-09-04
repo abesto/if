@@ -1,10 +1,19 @@
 "The not quite stereo" by Zoltan Nagy
 
 [
+Inform 1.64 introduces breaking changes around Plurality that hit the Plugs and Sockets extension
+(specifically: parts, but not all, of Plurality is included in the core).
+Instead of doing the right thing and fixing them, I took the shortcut and hacked up versions of these
+extensions that work on 1.64. These MUST be installed for this story file to compile.
+
+ - Plurality: https://gist.github.com/abesto/6d2d00bc6601510148ace8dc42904168
+ - Plugs and Sockets: https://gist.github.com/abesto/b7a4975452f3376338c357817d68b1c0
+]
+
+[
 Testers: Karesz, Kepten, Zsol
 	
 TODO:
-	Document changed dependencies, used version numbers etc.
 	time-based song switching. skip song action?
 ]
 
@@ -13,11 +22,11 @@ The story headline is "A story of the Chaos of Cables".
 The story creation year is 2016.
 Release along with an introductory postcard, the introductory booklet, and an interpreter.
 
-Include Plugs and Sockets by Sean Turner.
-Include Smarter Parser by Aaron Reed.
-Include Commonly Unimplemented by Aaron Reed.
-Include Numbered Disambiguation Choices by Aaron Reed.
-Include Adaptive Hints by Eric Eve.
+Include Plugs and Sockets by Sean Turner.  [ Version: see comment on top of file ]
+Include Smarter Parser by Aaron Reed.  [ Version 16/140501 ]
+Include Commonly Unimplemented by Aaron Reed.  [ Version 2 ]
+Include Numbered Disambiguation Choices by Aaron Reed. [ Version 7/140501 ]
+Include Adaptive Hints by Eric Eve. [ Version 7 ]
 
 Chapter 1 - Prodecure
 
